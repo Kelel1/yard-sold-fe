@@ -1,5 +1,6 @@
 import React from 'react';
 import { ApolloClient, HttpLink, InMemoryCache, gql } from '@apollo/client';
+import Navbar from '../components/Nav'
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
@@ -26,10 +27,17 @@ client.query({ query })
 
 const App = () => (
   
-  <div>
+  <div className="container">
+    <Navbar/>
     <h1>
-      Hello Kern
+      Welcome to Yard Sold!
     </h1>
+    <div>
+      <p>
+        Add an online presence to your yard sale, making it easier for potential customers
+        to find out when and where your yard sale is, as well as what items you are selling.
+      </p>
+    </div>
   </div>
 )
 
