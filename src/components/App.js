@@ -20,14 +20,14 @@ query {
 }
 `
 
-client.query({ query })
-  .then((response) => {
-    console.log(response.data);
-  });
+// client.query({ query })
+//   .then((response) => {
+//     console.log(response.data);
+//   });
 
 const App = () => (
   
-  <div className="container">
+  <div className="">
     <Navbar/>
     <h1>
       Welcome to Yard Sold!
@@ -38,6 +38,13 @@ const App = () => (
         to find out when and where your yard sale is, as well as what items you are selling.
       </p>
     </div>
+    <style jsx>{`
+      .all {
+        background-color: #2f4f4f;
+        color: white;
+      }
+
+    `}</style>
   </div>
 )
 
