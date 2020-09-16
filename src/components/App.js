@@ -1,6 +1,11 @@
-import React from 'react';
-import { ApolloClient, HttpLink, InMemoryCache, gql } from '@apollo/client';
-import Navbar from '../components/Nav'
+import React           from 'react';
+import { ApolloClient,
+         HttpLink,
+         InMemoryCache,
+         gql
+       }               from '@apollo/client';
+import Navbar          from './Nav';
+import Footer          from  './Footer'
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
@@ -28,20 +33,28 @@ query {
 const App = () => (
   
   <div className="">
-    <Navbar/>
-    <h1>
-      Welcome to Yard Sold!
-    </h1>
-    <div>
+    <Navbar/>    
+    <div className="all">
+      <p className="welcome">
+        Welcome to Yard Sold
+      </p>
       <p>
         Add an online presence to your yard sale, making it easier for potential customers
         to find out when and where your yard sale is, as well as what items you are selling.
       </p>
     </div>
+    <Footer/>
     <style jsx>{`
       .all {
         background-color: #2f4f4f;
         color: white;
+        height: 200px;
+      }
+      .welcome {
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+        padding: 2%;
       }
 
     `}</style>
