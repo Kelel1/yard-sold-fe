@@ -38,7 +38,7 @@ const App = () => (
       <p className="welcome">
         Welcome to Yard Sold
       </p>
-      <p>
+      <p className="container">
         Add an online presence to your yard sale, making it easier for potential customers
         to find out when and where your yard sale is, as well as what items you are selling.
       </p>
