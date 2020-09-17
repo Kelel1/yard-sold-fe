@@ -5,7 +5,8 @@ import { ApolloClient,
          gql
        }               from '@apollo/client';
 import Navbar          from './Nav';
-import Footer          from  './Footer'
+import Footer          from './Footer';
+import Login           from './Login';
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
@@ -43,6 +44,7 @@ const App = () => (
         to find out when and where your yard sale is, as well as what items you are selling.
       </p>
     </div>
+    <Login/>
     <Footer/>
     <style jsx>{`
       .all {
@@ -54,7 +56,7 @@ const App = () => (
         font-size: 20px;
         margin: auto;
         text-align: center;
-        padding: 2%;
+        padding-top: 5%;
       }
 
     `}</style>
