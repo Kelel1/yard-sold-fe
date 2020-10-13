@@ -1,0 +1,23 @@
+{
+  "allItems": [
+    {
+      "id": 0,
+      "name": "toy car",
+      "price": 1,
+      "description": "cool item to buy"
+    },
+    {
+      "id": 1,
+      "name": "table",
+      "price": 12,
+      "description": "cool item to buy"
+    },
+    { "id": 2, "name": "ps2", "price": 39, "description": "cool item to buy" },
+    {
+      "id": 3,
+      "name": "rocking chair",
+      "price": 25,
+      "description": "cool item to buy"
+    }
+  ]
+}

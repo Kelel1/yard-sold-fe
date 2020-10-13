@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
-import { Container, Row, Col, Nav} from 'react-bootstrap';
+import React, { useState } from "react";
+import { Container, Row, Col, Nav } from "react-bootstrap";
 
 const Navbar = () => (
-  <>    
-    <div className="nav">      
+  <>
+    <div className="nav">
       <Container fluid>
         <Row>
           <Col md="auto">
             <Nav.Item>
-              <Nav.Link href=""><button>Yard Sold</button></Nav.Link>
+              <Nav.Link href="">
+                <button>Yard Sold</button>
+              </Nav.Link>
             </Nav.Item>
           </Col>
           <Col xs={7}></Col>
@@ -21,11 +22,13 @@ const Navbar = () => (
           <Col md="auto">
             <Nav.Item>
               <Nav.Link href="">Store</Nav.Link>
-          </Nav.Item>
+            </Nav.Item>
           </Col>
           <Col md="auto">
             <Nav.Item>
-              <Nav.Link href=""><button>Sign-up</button></Nav.Link>
+              <Nav.Link href="">
+                <button>Sign-up</button>
+              </Nav.Link>
             </Nav.Item>
           </Col>
         </Row>
@@ -40,8 +43,7 @@ const Navbar = () => (
         justify-content: right;
       }
     `}</style>
-  
   </>
-)
+);
 
 export default Navbar;
