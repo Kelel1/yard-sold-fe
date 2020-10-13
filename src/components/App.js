@@ -26,10 +26,10 @@ query {
 }
 `
 
-// client.query({ query })
-//   .then((response) => {
-//     console.log(response.data);
-//   });
+client.query({ query })
+  .then((response) => {
+    console.log(response.data);
+  });
 
 const App = () => (
   
