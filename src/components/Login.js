@@ -6,28 +6,19 @@ const Login = () => {
   const [userName, setUserName] = useState('');
   const [password, setPasword]  = useState('');
 
-  const login = (event) => {
-    event.preventDefault()
-    setPasword(event.target.value);
-    setUserName(event.target.value);
-    console.log(userName, password);
-  }
-
   return (
     <div className="login container">
-      <Form onSubmit={login}>
+      <Form>
         <Form.Group controlId="Username">
           <Form.Label>Email address</Form.Label>
-          <Form.Control value={userName}
-                        onChange={()=> userName}
-                        type="text" placeholder="Enter username/email" />        
+          <Form.Control type="text" placeholder="Enter username/email" />        
         </Form.Group>
 
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
-        <button className="submit" type="submit">Login</button>
+        <button className="submit">Login</button>
       </Form>
       <style jsx>{`
         .login {
