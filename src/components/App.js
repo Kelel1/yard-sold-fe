@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { ApolloClient, HttpLink, InMemoryCache, gql } from "@apollo/client";
-import ItemList from "./ItemList";
+import React from "react";
+// import { ApolloClient, HttpLink, InMemoryCache, gql } from "@apollo/client";
 import Navbar from "./Nav";
 import Footer from "./Footer";
-import Login from "./Login";
-import { fetchAllItems } from "./../mock-api/fake-api-call";
+// import Login from "./Login";
 
 // const client = new ApolloClient({
 //   cache: new InMemoryCache(),
@@ -28,17 +26,10 @@ import { fetchAllItems } from "./../mock-api/fake-api-call";
 // });
 
 const App = () => {
-  const [items, setItems] = useState([]); // setting the local data
-
-  useEffect(() => {
-    fetchAllItems().then((data) => {
-      console.log(data);
-      return setItems(data);
-    }); // calling the API and settign the recived data
-  }, []);
+  
 
   return (
-    <div className="">
+    <div>
       <Navbar />
       <div className="all">
         <p className="welcome">Welcome to Yard Sold</p>
@@ -49,9 +40,8 @@ const App = () => {
         </p>
       </div>
       {/* <Login /> */}
-      <ItemList items={items} />
       <Footer />
-      {/* <style jsx>{`
+      <style jsx>{`
         .all {
           background-color: #2f4f4f;
           color: white;
@@ -63,7 +53,7 @@ const App = () => {
           text-align: center;
           padding-top: 5%;
         }
-      `}</style> */}
+      `}</style>
     </div>
   );
 };
