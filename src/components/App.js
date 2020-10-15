@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { ApolloClient, HttpLink, InMemoryCache, gql } from "@apollo/client";
+// import { ApolloClient, HttpLink, InMemoryCache, gql } from "@apollo/client";
 import ItemList from "./ItemList";
 import Navbar from "./Nav";
 import Footer from "./Footer";
-import Login from "./Login";
+// import Login from "./Login";
 import { fetchAllItems } from "./../mock-api/fake-api-call";
 
 // const client = new ApolloClient({
