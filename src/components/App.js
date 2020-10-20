@@ -4,7 +4,7 @@ import ItemList from "./ItemList";
 import Navbar from "./Nav";
 import Footer from "./Footer";
 // import Login from "./Login";
-import { fetchAllItems } from "./../mock-api/fake-api-call";
+import { fetchAllItems, fetchAllProfiles } from "./../mock-api/fake-api-call";
 
 // const client = new ApolloClient({
 //   cache: new InMemoryCache(),
@@ -29,12 +29,19 @@ import { fetchAllItems } from "./../mock-api/fake-api-call";
 
 const App = () => {
   const [items, setItems] = useState([]); // setting the local data
+  // const [vendors, setVendors] = useState([]); // setting the local data
 
   useEffect(() => {
     fetchAllItems().then((data) => {
       console.log(data);
       return setItems(data);
     }); // calling the API and settign the recived data
+  }, []);
+
+  useEffect(() => {
+    fetchAllProfiles().then((data) => {
+      console.log(data);
+    })
   }, []);
 
   return (
