@@ -19,5 +19,40 @@
       "price": 25,
       "description": "cool item to buy"
     }
+  ],
+
+  "vendorProfiles": [
+    {
+      "id": 0,      
+      "name": "Michael Phelps",
+      "username": "Mphelps123",
+      "password": "*******",
+      "totalItems": 23,
+      "intro:": "Welcome, I have many interesting items, come take a look"
+    },
+    {
+      "id": 1,
+      "name": "Stearl Kelder",
+      "username": "Skelder123",
+      "password": "*******",
+      "totalItems": 50,
+      "intro:": "Everything must go!"
+    },
+    {
+      "id": 2,
+      "name": "Jim Lorry",
+      "username": "Jlorry123",
+      "password": "*******",
+      "totalItems": 32,
+      "intro:": "Fair prices, but open to bargaining"
+    },
+    {
+      "id": 3,
+      "name": "Alexander Lars",
+      "username": "Alars123",
+      "password": "*******",
+      "totalItems": 80,
+      "intro:": "With so many items, you are bound to find something you like"
+    }
   ]
 }
