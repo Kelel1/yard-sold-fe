@@ -1,29 +1,29 @@
 import React from "react";
-// import { ApolloClient, HttpLink, InMemoryCache, gql } from "@apollo/client";
+import { ApolloClient, HttpLink, InMemoryCache, gql } from "@apollo/client";
 import Navbar from "./Nav";
 import Footer from "./Footer";
 // import Login from "./Login";
 
-// const client = new ApolloClient({
-//   cache: new InMemoryCache(),
-//   link: new HttpLink({
-//     uri: "http://localhost:4000/graphql",
-//   }),
-// });
+const client = new ApolloClient({
+  cache: new InMemoryCache(),
+  link: new HttpLink({
+    uri: "http://localhost:4000/graphql",
+  }),
+});
 
-// const query = gql`
-//   query {
-//     allItems {
-//       name
-//       price
-//       description
-//     }
-//   }
-// `;
+const query = gql`
+  query {
+    allItems {
+      name
+      price
+      description
+    }
+  }
+`;
 
-// client.query({ query }).then((response) => {
-//   console.log(response.data);
-// });
+client.query({ query }).then((response) => {
+  console.log(response.data);
+});
 
 const App = () => {
   

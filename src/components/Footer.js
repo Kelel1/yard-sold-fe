@@ -7,7 +7,7 @@ const Footer = () => (
       .footer {
         height: 200px;
         background-color: #2f4f4f;
-        margin-top: 300px;
+        margin-top: 500px;
       }
     `}</style>
   </div>
